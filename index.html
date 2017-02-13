@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stock Exchange</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body id="bodyId">
+
+    <div class="jumbotron  text-center">
+      <header role="banner" id="myBanner">
+        <h1>This is my Stock Exchange. Dana</h1>
+      </header>
+    </div>
+
+<div class="container" id="content">
+  <div class="row">
+    <div class="col-md-6" id="displayInformation">
+      <h2>My Account Info</h2>
+      <ul id="myAccountInfo">
+        <li>Name: Dana-Maria Iliescu</li>
+        <li>Currency: DANA0396</li>
+        <li id="available">Available: </li>
+      </ul>
+    </div>
+    <div class="col-md-6" id="makeOffer">
+      <h2>Make an Offer</h2>
+        <form class="form-inline" id="makeOfferForm">
+          <div class="form-group">
+            <label>Amount</label>
+            <input type="number" class="form-control" id="sellAmount" placeholder="Enter number" required>
+            <button type="button" class="form-control btn" id="sell">Sell</button>
+            <button type="reset" class="form-control btn">Reset</button>
+          </div>
+        </form>
+    </div>
+  </div>
+    <div class="row" id="exchangeDiv">
+      <div class="col-md-12">
+        <h2>Exchange Rate</h2>
+        <form class="form-inline">
+          <div class="form-group">
+            <label>Amount</label></br>
+            <input type="number" class="form-control" id="exchangeAmount" placeholder="Enter number">
+          </div>
+          <div class="form-group">
+            <label id="fromCurrencyLabel">From</label><br>
+            <input type="text" class="form-control" id="fromCurrency" placeholder="Enter currency">
+          </div>
+          <div class="form-group">
+            <br>
+            <input type="image" src="img/convert.png" id="reverseSymbol">
+          </div>
+          <div class="form-group">
+            <label id="toCurrencyLabel">To</label><br>
+            <input type="text" class="form-control" id="toCurrency" placeholder="Enter currency">
+          </div>
+          <div class="form-group">
+            <br>
+            <input type="button" class="form-control" id="convert" value="Convert"></input><br>
+          </div>
+          <div class="form-group">
+            <br>
+            <label id="result"></label>
+          </div>
+        </div>
+      </div>
+    <div class="row text-center">
+      <div class="col-md-12">
+
+        <div id="tableDiv" class="table-responsive">
+        <h2>Buy an Offer</h2>
+        <table class="table table-condensed" id="allOffers">
+          <thead>
+            <tr class="tr">
+              <th>ID</td>
+              <th>Amount</td>
+              <th>Currency</td>
+              <th>Time</td>
+            </tr>
+          </thead>
+          <tbody> </tbody>
+        </table>
+      </div>
+      <center>  <input type="button" class="form-control" id="buy" value="Buy"></input></center>
+      </div>
+    </div>
+  </div>
+  <footer  class="container-fluid text-center" role="contentinfo">
+    <!--<a href="#">Go to top</a>-->
+    <p>dana0396@stud.kea.dk</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/my.js"></script>
+</body>
+</html>

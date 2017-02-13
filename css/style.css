@@ -1,0 +1,74 @@
+
+.jumbotron {
+    background-color: #002157; /* Blue */
+    color: #ffffff;
+}
+
+body {
+  background-color: #B7D2ED;
+}
+
+.table {
+  margin-top: 2%;
+}
+
+.table th{
+   text-align: center;
+}
+
+#displayInformation, #makeOffer, #exchangeDiv, #tableDiv {
+  font-family: 'Taviraj', serif;
+}
+
+#reverseSymbol {
+	height: 1.8em;
+  width: auto;
+	margin-bottom: -7px;
+  background-color: inherit;
+}
+
+#exchangeDiv {
+  padding: 2% 0 2% 0;
+}
+
+#tableDiv {
+  height: 400px;
+  overflow: scroll;
+  margin-bottom: 0.5%;
+}
+
+#convert {
+	margin-bottom: -4px;
+}
+
+#buy {
+  max-width: 5em;
+}
+
+#result {
+	margin-bottom: -15px;
+}
+
+footer {
+	text-align: center;
+	font-size: .9em;
+	line-height: 6em;
+	margin-top: 3em;
+  color: #FFF;
+  background-color: #4277CC;
+}
+
+tr:hover {background-color: #7E8899}
+
+.highlight {
+    background-color: #124D89;
+    color: #FFF;
+}
+
+#content {
+	background: #B7D2ED;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
